@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">TheMovieDB</string>
+    <string name="latest_movies">Latest</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="movie_name">movie name</string>
+    <string name="description">description</string>
+    <string name="search_here">Search Here</string>
+    <string name="no_connection">No connection</string>
+    <string name="alert">Alert</string>
+    <string name="internet_message">To use this feature, you must enable internet services</string>
+    <string name="enable_internet">Enable internet services</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_favorite">Add Favorite</string>
+    <string name="share">share</string>
+    <string name="back">Back</string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="casts">Casts</string>
+    <string name="cast_name">Cast name</string>
+    <string name="cast_birthday">Cast birthday</string>
+    <string name="cast_gender">Cast gender</string>
+    <string name="movies">Movies</string>
+    <string name="favorite_failed">you can not add this movie as a favorite</string>
+    <string name="search_movie_error">No movies match your search</string>
+    <string name="posters">Posters</string>
+    <string name="similar_movies_error">There are no similar movies</string>
+    <string name="posters_error">There are no posters</string>
+
 </resources>
