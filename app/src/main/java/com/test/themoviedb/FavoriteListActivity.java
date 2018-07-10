@@ -9,6 +9,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -56,7 +57,7 @@ public class FavoriteListActivity extends AppCompatActivity {
 
     if (!connectionDetector.isConnectingToInternet()) {
       Toast.makeText(FavoriteListActivity.this, getResources().getString(R.string.no_connection), Toast.LENGTH_LONG).show();
-      final AlertDialog alertDialog = new AlertDialog.Builder(getApplicationContext()).create();
+      final AlertDialog alertDialog = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom)).create();
       alertDialog.setTitle(getResources().getString(R.string.alert));
       alertDialog.setMessage(getResources().getString(R.string.internet_message));
       alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, getResources().getString(R.string.enable_internet), new DialogInterface.OnClickListener() {

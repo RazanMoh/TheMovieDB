@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -79,9 +80,9 @@ public class MovieInformationActivity extends AppCompatActivity {
     ConnectionDetector connectionDetector = new ConnectionDetector(getApplicationContext());
 
     if (!connectionDetector.isConnectingToInternet()) {
-      Toast.makeText(MovieInformationActivity.this, getResources().getString(R.string.no_connection), Toast.LENGTH_LONG).show();
-      final AlertDialog alertDialog = new AlertDialog.Builder(getApplicationContext()).create();
+      final AlertDialog alertDialog = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom)).create();
       alertDialog.setTitle(getResources().getString(R.string.alert));
+
       alertDialog.setMessage(getResources().getString(R.string.internet_message));
       alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, getResources().getString(R.string.enable_internet), new DialogInterface.OnClickListener() {
 

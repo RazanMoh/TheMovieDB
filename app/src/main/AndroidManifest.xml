@@ -24,7 +24,6 @@
         <activity android:name=".MovieInformationActivity" />
         <activity android:name=".FavoriteListActivity" />
         <activity android:name=".CastInformationActivity" />
-        <activity android:name=".PosterActivity"></activity>
     </application>
 
 </manifest>
